@@ -1,0 +1,392 @@
+.nav-item a:hover {
+    color: rgb(230, 148, 101)!important;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.background{
+    background-image: url("/Imagens/Background.png");
+    background-repeat: no-repeat;
+    background-color: #272B2B;
+}
+.navbar{
+	box-shadow: 1px 3px 10px rgba(5, 5, 5, 0.5);
+}
+.body{
+	font-family: 'Josefin Sans', sans-serif;
+    background-color: #272B2B;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.triangle-l{
+    transform: rotateY(180deg);
+	border-bottom: 312px solid #272B2B;
+	border-left: 950px solid transparent;
+	border-right: -100px solid transparent;
+	height: 430px;
+	width: 930px;
+    float: left;
+    object-fit: scale-down;
+}
+.triangle-r{
+    border-bottom: 312px solid #272B2B;
+	  border-left: 950px solid transparent;
+	  border-right: -100px solid transparent;
+	  height: 430px;
+	  width: 930px;
+      float: right;
+    object-fit: scale-down;
+    
+ }
+
+ .triangle-l, .triangle-r {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+ }
+ 
+.text{
+    font-family: 'Josefin Sans', sans-serif ;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 300px 0px -20px 125px;
+    color:#272B2B
+}
+.text-center{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #272B2B;
+    font-weight: 900;
+    font-size: 100px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    height: 200px;   
+}
+.textsobre{
+    float: right;
+    
+}
+
+.imgsobre{
+    float:left;
+    margin-top: 70px;
+
+}
+.textsobre{
+    color: rgb(230, 148, 101);
+    text-align:left;
+    margin-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    margin-top: 300px;
+	margin-right: 10%;
+}
+.text-p{
+    font-weight: bold;
+    font-size: 60px;
+    height: 170px;
+    line-height: 80px;
+}
+.text-c{
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#549DCA;
+}
+.LMButton{
+    font-size: 30px;
+    border-radius: 8px;
+    background-color:rgb(230, 148, 101);
+    text-decoration: none;
+    border: none !important;
+    padding: 14px 20px;
+    display: inline-block;
+    outline: none !important;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.LMButton:hover {
+    background-color: rgb(221, 136, 86);
+    color: #272B2B;
+ }
+.SLButton{
+	font-size: 30px;
+    border-radius: 8px;
+    background-color:rgb(230, 148, 101);
+    text-decoration: none;
+    border: none !important;
+    padding: 24px 20px;
+    display: inline-block;
+    outline: none !important;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.SLButton:hover {
+    background-color: rgb(221, 136, 86);
+    color: #272B2B;
+ }
+/* 2 */
+.slider{
+	position: absolute;
+	width: 100%;
+	background: #272B2B; /* darckblue */
+	margin-top: 1700px;
+}
+.myslide{
+	height: 755px;
+	display: none;
+	overflow: hidden;
+}
+
+.prev, .next{
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: #549DCA;
+	transition: 0.1s;
+	user-select: none;
+}
+.prev:hover, .next:hover{
+	color: #549DCA; /* blue */
+}
+.next{
+	right: 0;
+}
+.dotsbox{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 20px;
+	cursor: pointer;
+}
+.dot{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	margin: 0 10px;
+	cursor: pointer;
+}
+/* /2 */
+
+/* javascript */
+.active, .dot:hover{
+	border-color: #549DCA; /* blue */
+}
+/* /javascript */
+
+/* muslide add fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 5.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+/* /muslide add fade */
+
+/* 3 */
+.txt{
+	position: absolute;
+	color: #549DCA;
+	letter-spacing: 2px;
+	line-height: 35px;
+	top: 40%;
+	left: 15%;
+	-webkit-animation-name: posi;
+  	-webkit-animation-duration: 2s;
+  	animation-name: posi;
+  	animation-duration: 2s;
+	z-index: 1;
+}
+
+@-webkit-keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+
+@keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+.txt h1{
+	color: rgb(230, 148, 101); /* blue */
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+.txt p{
+	font-weight: bold;
+	font-size: 20px;
+}
+/* /3 */
+
+/* 4 */
+.imgSlide{
+	transform: scale(1.5, 1.5);
+	-webkit-animation-name: zoomin;
+  	-webkit-animation-duration: 40s;
+  	animation-name: zoomin;
+  	animation-duration: 40s;
+}
+@-webkit-keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+
+
+@keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+/* /4 */
+
+
+
+/* 5 */
+@media screen and (max-width: 800px){
+	.myslide{
+		height: 500px;
+	}
+	.txt{
+		letter-spacing: 2px;
+		line-height: 25px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-animation-name: posi2;
+		-webkit-animation-duration: 2s;
+		animation-name: posi2;
+		animation-duration: 2s;
+	}
+
+	@-webkit-keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+
+	@keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+	.txt h1{
+		font-size: 40px;
+	}
+	.txt p{
+		font-size: 13px;
+	}
+
+}
+/* /5 */
+
+/* 6 */
+@media screen and (max-width: 520px){
+	.txt h1{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.sign{
+		margin-right: 20px;
+	}
+	.sign a{
+		font-size: 12px;
+	}
+}
+/* /6 */
+
+  #back-to-top {
+	background-color: transparent;
+	border-radius: 65px;
+	bottom: 14px;
+	color: rgb(230, 148, 101);
+	cursor: pointer;
+	height: 40px;
+	position: fixed;
+	right: 22px;
+	width: 40px;
+	z-index: 3;
+	outline: none;
+  }
+  #back-to-top::after {
+	  content: '▲';
+	  display: flex;
+	  justify-content: center;
+	  padding-left: 1px;
+	  padding-top: 10px;
+	}
+.containerForm{
+	margin-top: 1000px;
+	width:100%;
+	height:290px;
+	float: right;
+	justify-content: center;
+	box-shadow: none;
+}
+.Formtext{
+	color: #549DCA;
+	font-size: 30px;
+	float: left;
+	margin-left: 20%;
+	margin-right: 300px;
+	font-weight: bold
+
+}
+.contato{
+	color:rgb(230, 148, 101);
+	font-size: 60px;
+	
+}
+
+.Formsinput{
+	width: 30%;
+	outline: none;
+	float: left;
+	/*background-color: #15172b;
+	border-radius: 20px;
+	box-sizing: border-box;
+	height: 500px;
+	padding: 20px;
+	width: 320px;*/
+}
+.form-control{
+	background-color:;
+	color: #549DCA;
+}
+.emailprojeto{
+	font-size: 20px;
+}
+.FrButton{
+	flex:content ;
+	float: right;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 20px;
+    background-color:rgb(230, 148, 101);
+    text-decoration: none;
+    border: none !important;
+    padding: 10px 40px;
+    display: inline-block;
+    outline: none !important;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+  
